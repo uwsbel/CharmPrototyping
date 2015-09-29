@@ -68,16 +68,24 @@ export CHARMDIR = "PATH TO THE DIRECTORY WHERE YOU RAN ./build"
 This `$CHARMDIR` environment variable will be used by the Makefiles in your Charm++ program.
 
 ## Common 
-To compile any of the programs in this folder you need to make sure you have gcc and add the following line in the Makefile:
+To compile any of the programs in this folder you need to make sure you have gcc or the compiler you chose when building the library and add the following line in the Makefile:
 
 ```
 CHARMDIR = [Insert the path to your charm installation directiory]
 ```
 
-If you followied the local setup described above, then there is no need to declare the CHARMDIR variable since it already is an environment variable. Therefore the following line should have the right values
+If you followed the local setup described above, then there is no need to declare the CHARMDIR variable since it already is an environment variable. Therefore the following line should have the right values
 
 ```
 CHARMC = $(CHARMDIR)/bin/charmc $(OPTS)
+```
+
+### Compiling
+
+All of the example programs can be simply compiled by running:
+
+```
+make
 ```
 
 ### The charmrun binary
