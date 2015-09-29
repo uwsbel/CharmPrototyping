@@ -1,0 +1,16 @@
+mainmodule main {
+
+  readonly CProxy_Main mainProxy;
+  readonly int valRows;
+  readonly int valCols;
+  readonly int chareRows;
+  readonly int chareCols;
+
+  extern module jacobi;
+
+  mainchare Main {
+    entry Main(CkArgMsg* msg);
+    entry void stepCheckin(double);
+  };
+
+};

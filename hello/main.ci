@@ -1,0 +1,13 @@
+mainmodule main 
+{ 
+    mainchare Main 
+    { 
+        entry Main(CkArgMsg* msg); 
+    };
+    //chare Simple
+    //{
+    //    entry Simple(double pi);
+    //    entry void findArea(int radius, bool done);
+    //}
+
+};

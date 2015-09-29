@@ -1,0 +1,12 @@
+module jacobi {
+
+  array [2D] Jacobi {
+    entry Jacobi();
+    entry void startStep();
+    entry void eastGhost(int len, double vals[len]);
+    entry void westGhost(int len, double vals[len]);
+    entry void southGhost(int len, double vals[len]);
+    entry void northGhost(int len, double vals[len]);
+  };
+
+};
