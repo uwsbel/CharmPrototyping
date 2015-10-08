@@ -7,7 +7,19 @@ If running in euler or a development node make sure you run the following two co
     module load charm
 ```
 
-## Charm++ Local setup in Linux/OSX
+## Charm++ Setup
+
+Download charm-6.6.1 source code from [http://charm.cs.illinois.edu/distrib/charm-6.6.1.tar.gz] and run:
+
+```
+tar -xf charm-6.6.1.tar.gz
+```
+
+### Charm++ Setup in Euler
+
+Run the following slurm script
+
+### Charm++ Local setup in Linux/OSX
 To setup Charm++ in a Unix based system it was relatively simple. Either clone the git repository or download the distribution version and then go into the folder and run:
 
 ```
