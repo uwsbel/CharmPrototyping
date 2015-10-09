@@ -21,9 +21,9 @@ void Hello::sayHi(int from) {
   int numCols = 400;
   int sample[numRows][numCols];
 
-  if(thisIndex % 2 == 0)
+  if(thisIndex % 4 == 0)
   {
-    CkPrintf("%d mod 2 == 0\n",thisIndex);
+    CkPrintf("%d mod 4 == 0\n",thisIndex);
     for(int currRow = 0;currRow < numRows;currRow++)
     {
       for(int currCol = 0;currCol < numCols;currCol++)
@@ -33,9 +33,9 @@ void Hello::sayHi(int from) {
       }
     }
   }
-  else
+  else if (thisIndex % 3 == 0)
   {
-    CkPrintf("%d mod 2 != 0\n",thisIndex);
+    CkPrintf("%d mod 3 == 0\n",thisIndex);
 
     for(int currCol = 0;currCol < numCols;currCol++)
     {
@@ -45,6 +45,10 @@ void Hello::sayHi(int from) {
         sample[currRow][currCol] = currIndex;
       }
     }
+  }
+  else
+  {
+    CkPrintf("No work being done here %d...", thisIndex);
   }
 
   // Have this chare object say hello to the user.
