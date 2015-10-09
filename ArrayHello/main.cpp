@@ -9,7 +9,7 @@
 // Entry point of Charm++ application
 Main::Main(CkArgMsg* msg) {
 
-  numElements = 5; // Default numElements to 5
+  numElements = 100; // Default numElements to 5
 
   // There should be 0 or 1 command line arguements.
   // If there is one, it is the number of "Hello"

@@ -3,3 +3,6 @@ hello/main.def.h
 charmrun
 *.def.*
 *.decl.*
+MeetingRecordings
+ArrayHello/hello.o
+ArrayHello/main.o

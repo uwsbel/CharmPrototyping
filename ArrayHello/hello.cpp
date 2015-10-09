@@ -17,6 +17,35 @@ Hello::Hello() {
 Hello::Hello(CkMigrateMessage *msg) { }
 
 void Hello::sayHi(int from) {
+  int numRows = 200;
+  int numCols = 400;
+  int sample[numRows][numCols];
+
+  if(thisIndex % 2 == 0)
+  {
+    CkPrintf("%d mod 2 == 0\n",thisIndex);
+    for(int currRow = 0;currRow < numRows;currRow++)
+    {
+      for(int currCol = 0;currCol < numCols;currCol++)
+      {
+        int currIndex = currCol + currRow*numCols;
+        sample[currRow][currCol] = currIndex;
+      }
+    }
+  }
+  else
+  {
+    CkPrintf("%d mod 2 != 0\n",thisIndex);
+
+    for(int currCol = 0;currCol < numCols;currCol++)
+    {
+      for(int currRow = 0;currRow < numRows;currRow++)
+      {
+        int currIndex = currCol + currRow*numCols;
+        sample[currRow][currCol] = currIndex;
+      }
+    }
+  }
 
   // Have this chare object say hello to the user.
   CkPrintf("\"Hello\" from Hello chare # %d on "
