@@ -60,10 +60,10 @@ void Hello::sayHi(int from) {
   // to also say hello. If this is the last chare object in
   // the array of chare objects, then tell the main chare
   // object to exit the program.
-  if (thisIndex < (numElements - 1))
-    thisProxy[thisIndex + 1].sayHi(thisIndex);
-  else
-    mainProxy.done();
+  // if (thisIndex < (numElements - 1))
+  //   thisProxy[thisIndex + 1].sayHi(thisIndex);
+  // else
+  mainProxy.done();
 }
 
 #include "hello.def.h"

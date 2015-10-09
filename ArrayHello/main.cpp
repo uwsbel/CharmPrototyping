@@ -38,7 +38,10 @@ Main::Main(CkArgMsg* msg) {
 
   // Invoke the "sayHi()" entry method on the first
   // element of the helloArray array of chare objects.
-  helloArray[0].sayHi(-1);
+  for(int i = 0;i < numElements;i++)
+  {
+    helloArray[i].sayHi(-1);
+  }
 }
 
 // Constructor needed for chare object migration (ignore for now)
