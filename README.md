@@ -9,6 +9,8 @@ If running in euler or a development node make sure you run the following two co
 
 ## Charm++ Setup
 
+If setting up Charm++ in Euler ignore the download step and go to Charm++ Setup in Euler.
+
 Download charm-6.6.1 source code from [http://charm.cs.illinois.edu/distrib/charm-6.6.1.tar.gz] and run:
 
 ```
