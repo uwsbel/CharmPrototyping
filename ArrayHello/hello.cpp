@@ -23,7 +23,7 @@ void Hello::sayHi(int from) {
 
   if(thisIndex % 4 == 0)
   {
-    CkPrintf("%d mod 4 == 0\n",thisIndex);
+    //CkPrintf("%d mod 4 == 0\n",thisIndex);
     for(int currRow = 0;currRow < numRows;currRow++)
     {
       for(int currCol = 0;currCol < numCols;currCol++)
@@ -35,7 +35,7 @@ void Hello::sayHi(int from) {
   }
   else if (thisIndex % 3 == 0)
   {
-    CkPrintf("%d mod 3 == 0\n",thisIndex);
+    //CkPrintf("%d mod 3 == 0\n",thisIndex);
 
     for(int currCol = 0;currCol < numCols;currCol++)
     {
@@ -48,7 +48,7 @@ void Hello::sayHi(int from) {
   }
   else
   {
-    CkPrintf("No work being done here %d...", thisIndex);
+    //CkPrintf("No work being done here %d...", thisIndex);
   }
 
   // Have this chare object say hello to the user.
