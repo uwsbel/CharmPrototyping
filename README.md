@@ -17,7 +17,7 @@ tar -xf charm-6.6.1.tar.gz
 
 ### Charm++ Setup in Euler
 
-Run the following slurm script
+Run the following slurm script that is in this repository: `slurm_charm_setup.sh` 
 
 ### Charm++ Local setup in Linux/OSX
 To setup Charm++ in a Unix based system it was relatively simple. Either clone the git repository or download the distribution version and then go into the folder and run:
