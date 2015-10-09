@@ -32,6 +32,10 @@ void Hello::sayHi(int from) {
         sample[currRow][currCol] = currIndex;
       }
     }
+    // Have this chare object say hello to the user.
+    CkPrintf("\"Hello\" from Hello chare # %d on "
+           "processor %d (told by %d). I am divisible by 4 \n",
+           thisIndex, CkMyPe(), from);
   }
   else if (thisIndex % 3 == 0)
   {
@@ -45,16 +49,19 @@ void Hello::sayHi(int from) {
         sample[currRow][currCol] = currIndex;
       }
     }
+    // Have this chare object say hello to the user.
+    CkPrintf("\"Hello\" from Hello chare # %d on "
+           "processor %d (told by %d). I am divisible by 3 \n",
+           thisIndex, CkMyPe(), from);
   }
   else
   {
-    //CkPrintf("No work being done here %d...", thisIndex);
+    CkPrintf("\"Hello\" from Hello chare # %d on "
+           "processor %d (told by %d). I am not divisible by 4 or 3 \n",
+           thisIndex, CkMyPe(), from);  
   }
 
-  // Have this chare object say hello to the user.
-  CkPrintf("\"Hello\" from Hello chare # %d on "
-           "processor %d (told by %d).\n",
-           thisIndex, CkMyPe(), from);
+
 
   // Tell the next chare object in this array of chare objects
   // to also say hello. If this is the last chare object in
