@@ -17,9 +17,13 @@ Download charm-6.6.1 source code from [http://charm.cs.illinois.edu/distrib/char
 tar -xf charm-6.6.1.tar.gz
 ```
 
-### Charm++ Setup in Euler
+### Charm++ Setup in Euler, Single Node Multi-core
 
 Run the following slurm script that is in this repository: `slurm_charm_setup.sh` 
+
+### Charm++ Setup in Euler, Multi Node Multi-core
+
+Run the following slurm script that is in this repository: `slurm_charmMultiNode_setup.sh` 
 
 ### Charm++ Local setup in Linux/OSX
 To setup Charm++ in a Unix based system it was relatively simple. Either clone the git repository or download the distribution version and then go into the folder and run:
