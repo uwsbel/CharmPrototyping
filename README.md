@@ -49,13 +49,13 @@ Choose a set of compiler flags [1-5]
 	4) production build w/ projections   --with-production --enable-tracing
 	5) custom
 
-3
+4
 
 What do you want to build?
 	1) Charm++ [default] (choose this if you are building NAMD)
 	2) Charm++, AMPI, ParFUM, FEM and other libraries
 
-2
+1
 
 Do you want to compile in parallel?
         1) No
